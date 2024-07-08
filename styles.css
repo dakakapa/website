@@ -8,15 +8,19 @@
     background: transparent;
 }
 
-html, main {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+html, body, main {
     height: 100%;
     width: 100%;
 }
 
 body {
     display: flex;
-    height: 100%;
-    width: 100%;
 }
 
 .border {
@@ -24,27 +28,35 @@ body {
     border-color: black;
 }
 
+
+#side-bar {
+    padding: 1% 49px 0px;
+    border-right-width: 1px;
+    background-color: darkgray;
+}
+
 #home {
-    background-color: white;
     border-width: 1px;
+    background-color: white;
+}
+
+#dirs {
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+}
+
+#dirs > ul > li {
+    padding: 3px 0px;
+}
+
+#dirs > h1 {
+    padding-top: 3%;
 }
 
 #top-bar {
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-    padding-left: 2px;
+    padding: 0.5% 0% 0.5% 2px;
     border-bottom-width: 1px;
     background-color: grey;
-    color: black;
-}
-
-#side-bar {
-    padding-left: 49px;
-    padding-right: 49px;
-    padding-top: 39.2px;
-    border-right-width: 1px;
-    background-color: darkgray;
-    border-left: 0;
-    border: top 0;
-    height: 100%;
+    color: blue;
 }
