@@ -8,20 +8,41 @@
     background: transparent;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-html, body, main {
+html, main {
     height: 100%;
     width: 100%;
 }
 
 body {
+    margin: auto;
     display: flex;
+    width: 70%;
+    height: 100%;
+    border-left: 1px;
+    border-right: 1px;
+    background-color: crimson;
 }
+
+@media (max-width : 900px) {
+    body {
+        width: 100%;
+        background-color: white;
+    }
+
+    main {
+        flex-shrink: 0;
+    }
+}
+
+main {
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 
 .border {
     border-style: solid;
@@ -30,7 +51,7 @@ body {
 
 
 #side-bar {
-    padding: 1% 49px 0px;
+    padding: 1% 50px 0px;
     border-right-width: 1px;
     background-color: darkgray;
 }
