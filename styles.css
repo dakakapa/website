@@ -23,14 +23,10 @@ body {
     background-color: crimson;
 }
 
-@media (max-width : 900px) {
+@media (max-width : 1080px) {
     body {
         width: 100%;
         background-color: white;
-    }
-
-    main {
-        flex-shrink: 0;
     }
 }
 
